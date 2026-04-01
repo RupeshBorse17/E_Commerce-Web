@@ -1,10 +1,18 @@
-HELP.md
+# =====================
+# Spring Boot / Java
+# =====================
+# Compiled class files
+*.class
+
+# Maven target directory
 target/
-.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
-### STS ###
+# Maven wrapper
+.mvn/wrapper/maven-wrapper.jar
+
+# Eclipse / STS
 .apt_generated
 .classpath
 .factorypath
@@ -13,13 +21,13 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
+# IntelliJ IDEA
 .idea
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
@@ -29,5 +37,29 @@ build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
-### VS Code ###
+# Sensitive Spring Boot files
+server/src/main/resources/application.properties
+server/src/main/resources/*.key
+server/src/main/resources/*.jks
+
+# =====================
+# Node / React
+# =====================
+# Dependencies
+node_modules/
+client/node_modules/
+
+# Build outputs
+build/
+client/build/
+
+# Environment variables
+.env
+client/.env
+
+# VS Code
 .vscode/
+
+# Mac / Windows
+.DS_Store
+Thumbs.db
